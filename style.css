@@ -141,6 +141,10 @@ button:disabled {
     margin-bottom: 1rem;
 }
 
+.display-budget h2 {
+    margin-bottom: .5rem;
+}
+
 .display-category p {
     margin-bottom: .5rem;
 }
