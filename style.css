@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex__column {
+    flex-direction: column;
+}
+
+.flex__center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex__between {
+    justify-content: space-between;
+}
+
+nav {
+    background-color: rgb(104, 3, 3);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    height: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.income {
+    background: url(budget2.jpg) rgba(250, 243, 185, 0.952) no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+input {
+    border: none;
+    border-bottom: solid 2px grey;
+    width: 8rem;
+    padding: .3rem;
+    margin: 1em;
+}
+
+#income-amount {
+    background-color: transparent;
+    border-bottom: solid 2px rgb(70, 69, 69);
+}
+
+input:focus, #income-amount:focus {
+    outline: none;
+    border-color: black;
+}
+
+button {
+    background-color: rgb(104, 3, 3);
+    border: 2px solid rgb(104, 3, 3);
+    border-radius: .5rem;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.404);
+    color: white;
+    cursor: pointer;
+    font-size: .9rem;
+    margin: .5rem;
+    margin-left: 0;
+    padding: .5rem;
+}
+
+.btn--ghost {
+    background-color: white;
+    border: 2px solid rgb(104, 3, 3);
+    color: rgb(104, 3, 3);
+}
+
+button:hover, .add-category:hover {
+    transform: translate(.2rem, -.05rem);
+    transform: scale(1.05, 1.05);
+}
+
+.btn--ghost:hover {
+    background-color: rgb(104, 3, 3);
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    filter: opacity(43%);
+}
+
+.no-budget {
+    text-align: center;
+    margin: 1rem;
+}
+
+.no-budget p, .display__income-balance, .display__budget-sum {
+    margin-bottom: 1rem;
+}
+
+.add-category {
+    border-radius: 0;
+    margin: 1rem;
+    margin-left: 0;
+    width: 10rem;
+}
+
+.placeholder {
+    color: rgb(44, 43, 43);
+}
+
+.budget {
+    padding: 1rem;
+}
+
+.budget-category, .display-category {
+    border: 2px solid white;
+    box-shadow: 0px 2px 5px 1px gray;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    min-width: 40%;
+}
+
+.budget-category input {
+    width: 4rem;
+}
+
+.income-balance {
+    margin-bottom: 1rem;
+}
+
+.display-category p {
+    margin-bottom: .5rem;
+}
+
+.delete-options {
+    text-align: center;
+}
+
+.delete-options p {
+    margin: 1rem;
+}
+
+.hide {
+    display: none;
+}
