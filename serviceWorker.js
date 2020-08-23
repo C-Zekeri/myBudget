@@ -1,9 +1,9 @@
 const myBudget = "myBudget-v1"
 const assets = [
     "/",
-    "/index.html",
-    "/style.css",
-    "/script.js",
+    "index.html",
+    "style.css",
+    "script.js",
 ]
 
 self.addEventListener("install", installEvent => {
@@ -12,6 +12,7 @@ self.addEventListener("install", installEvent => {
         .then(cache => {
             cache.addAll(assets)
         })
+        .catch(error => console.log("Error:", error))
     )
 })
 
