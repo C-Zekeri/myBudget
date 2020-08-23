@@ -1,0 +1,24 @@
+{
+    "short_name": "Budget",
+    "name": "myBudget",
+    "description": "Plan your finances with myBudget",
+    "icons": [
+        {
+            "src": "b-icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+
+        {
+            "src": "b-icon_maskable.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#680303"
+}
