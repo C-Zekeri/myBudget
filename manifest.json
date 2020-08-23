@@ -16,7 +16,7 @@
             "purpose": "maskable"
         }
     ],
-    "start_url": "/",
+    "start_url": "https://c-zekeri.github.io/myBudget/",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
