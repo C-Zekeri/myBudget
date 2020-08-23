@@ -44,6 +44,7 @@ function createCategory() {
     nameLabel.htmlFor = "category";
     amountLabel.innerText = "Amount";
     amountLabel.htmlFor = "amount";
+    categoryAmount.setAttribute("type", "number");
 
     //assign classes to new elements
     category.classList.add('budget-category');
@@ -53,9 +54,9 @@ function createCategory() {
     //append new elements to parent elements
     budgetCategories.appendChild(category);
     category.appendChild(nameLabel);
-    category.appendChild(categoryName);
+    nameLabel.appendChild(categoryName);
     category.appendChild(amountLabel);
-    category.appendChild(categoryAmount);
+    amountLabel.appendChild(categoryAmount);
 
     //create object for new category
     let newCategory = { name: "", amount: "" };
@@ -176,4 +177,3 @@ function deleteBudget() {
 }
 
 //implement function to delete individual categories
-//style.

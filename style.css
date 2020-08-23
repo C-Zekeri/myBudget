@@ -160,3 +160,10 @@ button:disabled {
 .hide {
     display: none;
 }
+
+@media all and (max-width: 480px) {
+    .budget-category {
+        display: flex;
+        flex-direction: column;
+    }
+}
