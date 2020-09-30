@@ -4,21 +4,21 @@
     "description": "Plan your finances with myBudget",
     "icons": [
         {
-            "src": "b-icon.png",
+            "src": "/assets/b-icon.png",
             "type": "image/png",
             "sizes": "512x512"
         },
 
         {
-            "src": "b-icon_maskable.png",
+            "src": "/assets/b-icon_maskable.png",
             "type": "image/png",
             "sizes": "512x512",
             "purpose": "maskable"
         }
     ],
-    "start_url": "https://c-zekeri.github.io/myBudget/",
+    "start_url": "/",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "https://c-zekeri.github.io/myBudget/",
+    "scope": "/",
     "theme_color": "#680303"
 }

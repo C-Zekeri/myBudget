@@ -1,10 +1,15 @@
 const myBudget = "myBudget-v1"
 const assets = [
-    "index.html",
-    "style.css",
-    "script.js",
-    "/icons",
-    "budget2.jpg"
+    "/src/index.html",
+    "/src/style.css",
+    "/src/script.js",
+    "/assets/b-icon_apple.png",
+    "/assets/b-icon_maskable.png",
+    "/assets/b-icon.png",
+    "/assets/budget2.jpg",
+    "/assets/logos/github_icon-icons.com_65450.png",
+    "/assets/logos/hashnode.png",
+    "/assets/logos/twitter_PNG1.png"
 ]
 
 self.addEventListener("install", installEvent => {
