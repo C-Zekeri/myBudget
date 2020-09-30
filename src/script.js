@@ -1,4 +1,5 @@
 //First of all, bienvenue. Je m'appelle La Professeur, et tu?
+const myStorage = window.localStorage;
 const income = document.getElementById('income-amount');
 const noBudgetContent = document.querySelector('.no-budget');
 const newBudgetContent = document.querySelector('.new-budget');
@@ -113,6 +114,10 @@ function incomeBalance() {
 }
 
 function saveBudget() {
+    //store values in local storage
+    localStorage.setItem('Categories', JSON.stringify(categories));
+
+    //output displayBudget content
     newBudgetContent.classList.add('hide');
     displayBudgetContent.classList.remove('hide');
 
@@ -120,7 +125,8 @@ function saveBudget() {
 }
 
 function displayBudget() {
-    for (i of categories) {
+    const Categories = JSON.parse(localStorage.getItem('Categories'));
+    for (i of Categories) {
         let percentage = (i.amount / income.value) * 100;
 
         const displayCategory = document.createElement('div');
@@ -171,6 +177,9 @@ function deleteBudget() {
     budgetSum();
     incomeBalance();
 
+    //remove info from local storage
+    localStorage.removeItem('Categories');
+
     //return to no budget display
     noBudgetContent.classList.remove('hide');
     displayBudgetContent.classList.add('hide');
@@ -187,3 +196,4 @@ if ("serviceWorker" in navigator) {
 }
 
 //implement function to delete individual categories
+//display from local storage
