@@ -1,6 +1,6 @@
 const myBudget = "myBudget-v1"
 const assets = [
-    "/src/index.html",
+    "index.html",
     "/src/style.css",
     "/src/script.js",
     "/assets/b-icon_apple.png",
