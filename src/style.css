@@ -48,7 +48,7 @@ header {
 }
 
 .income {
-    background: url(/assets/budget2.jpg) rgba(250, 243, 185, 0.952) no-repeat;
+    background: url(../assets/budget2.jpg) rgba(250, 243, 185, 0.952) no-repeat;
     background-size: cover;
     height: 40vh;
 }
