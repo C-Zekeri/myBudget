@@ -46,6 +46,8 @@ function createCategory() {
     amountLabel.innerText = "Amount";
     amountLabel.htmlFor = "amount";
     categoryAmount.setAttribute("type", "number");
+    categoryAmount.setAttribute("id", "amount");
+    categoryName.setAttribute("id", "category");
 
     //assign classes to new elements
     category.classList.add('budget-category');
